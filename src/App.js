@@ -1,19 +1,24 @@
-import React from 'react';
-import About from './components/about';
-import Info from './components/info';
-import Interests from './components/interests';
-import Footer from './components/footer';
-import './App.css';
+import React from "react"
+import Header from "./components/Header"
+import Location from "./components/Location"
+import data from "./data"
+import "./App.css"
 
-function App() {
+export default function App() {
+  const card = data.map(item => {
+    return(
+      <Location 
+        key = {item.id}
+        item = {item}
+      />
+    )
+  })
   return (
-    <main>
-    <Info />
-    <About />
-    <Interests />
-    <Footer />
-    </main>
+    <div>
+      <Header />
+      <section>
+        {card}
+      </section>
+    </div>
   )
 }
-
-export default App;
