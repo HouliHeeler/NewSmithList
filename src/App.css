@@ -1,0 +1,24 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(to bottom right, #792300, #F37000 );
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 10vh;
+    padding: 1% 5%;
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+.logo, .fa-clipboard-list {
+    max-height: 10vh;
+}
