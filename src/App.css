@@ -6,8 +6,10 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background: linear-gradient(to bottom right, #9da4f6, #4f56a5 );
+    background: linear-gradient(to right bottom, #9da4f6, #4f56a5 );
 }
+
+/* Header including logo and checklist icon  */
 
 header {
     display: flex;
@@ -23,6 +25,8 @@ header {
     max-height: 10vh;
 }
 
+/* Main content */
+
 .main--content {
     display: flex;
 }
@@ -31,6 +35,8 @@ header {
     background-color: whitesmoke;
     border-radius: 5px;
 }
+
+/* Weekly planner and recipe information */
 
 .user--selections {
     display: flex;
@@ -54,6 +60,8 @@ header {
     height: 85%;
 }
 
+/* Recipe options sidebar */
+
 .recipes {
     display: flex;
     flex-direction: column;
@@ -62,4 +70,13 @@ header {
     width: 25%;
     height: 75vh; 
     margin: 2% 5% 5% 2.5%;
+}
+
+.recipe--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px 5px;
 }
